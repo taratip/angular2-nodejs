@@ -17,13 +17,13 @@ export var RenderType_SigninComponent = import0.ɵcrt({
 });
 export function View_SigninComponent_0(l) {
     return import0.ɵvid(0, [
-        (l()(), import0.ɵeld(0, null, null, 35, 'div', [[
+        (l()(), import0.ɵeld(0, null, null, 37, 'div', [[
                 'class',
                 'col-md-8 col-md-offset-2'
             ]
         ], null, null, null, null, null)),
         (l()(), import0.ɵted(null, ['\n  '])),
-        (l()(), import0.ɵeld(0, null, null, 32, 'form', [[
+        (l()(), import0.ɵeld(0, null, null, 34, 'form', [[
                 'novalidate',
                 ''
             ]
@@ -111,17 +111,18 @@ export function View_SigninComponent_0(l) {
         import0.ɵprd(1024, null, import2.ControlContainer, null, [import2.FormGroupDirective]),
         import0.ɵdid(8192, null, 0, import2.NgControlStatusGroup, [import2.ControlContainer], null, null),
         (l()(), import0.ɵted(null, ['\n    '])),
-        (l()(), import0.ɵeld(0, null, null, 10, 'div', [[
+        (l()(), import0.ɵeld(0, null, null, 11, 'div', [[
                 'class',
                 'form-group'
             ]
         ], null, null, null, null, null)),
         (l()(), import0.ɵted(null, ['\n      '])),
-        (l()(), import0.ɵeld(0, null, null, 0, 'label', [[
+        (l()(), import0.ɵeld(0, null, null, 1, 'label', [[
                 'for',
                 'email'
             ]
         ], null, null, null, null, null)),
+        (l()(), import0.ɵted(null, ['Email'])),
         (l()(), import0.ɵted(null, ['\n      '])),
         (l()(), import0.ɵeld(0, null, null, 5, 'input', [
             [
@@ -196,19 +197,19 @@ export function View_SigninComponent_0(l) {
         ], function (v, en, $event) {
             var ad = true;
             if (('input' === en)) {
-                var pd_0 = (import0.ɵnov(v, 13)._handleInput($event.target.value) !== false);
+                var pd_0 = (import0.ɵnov(v, 14)._handleInput($event.target.value) !== false);
                 ad = (pd_0 && ad);
             }
             if (('blur' === en)) {
-                var pd_1 = (import0.ɵnov(v, 13).onTouched() !== false);
+                var pd_1 = (import0.ɵnov(v, 14).onTouched() !== false);
                 ad = (pd_1 && ad);
             }
             if (('compositionstart' === en)) {
-                var pd_2 = (import0.ɵnov(v, 13)._compositionStart() !== false);
+                var pd_2 = (import0.ɵnov(v, 14)._compositionStart() !== false);
                 ad = (pd_2 && ad);
             }
             if (('compositionend' === en)) {
-                var pd_3 = (import0.ɵnov(v, 13)._compositionEnd($event.target.value) !== false);
+                var pd_3 = (import0.ɵnov(v, 14)._compositionEnd($event.target.value) !== false);
                 ad = (pd_3 && ad);
             }
             return ad;
@@ -250,17 +251,18 @@ export function View_SigninComponent_0(l) {
         import0.ɵdid(8192, null, 0, import2.NgControlStatus, [import2.NgControl], null, null),
         (l()(), import0.ɵted(null, ['\n    '])),
         (l()(), import0.ɵted(null, ['\n    '])),
-        (l()(), import0.ɵeld(0, null, null, 10, 'div', [[
+        (l()(), import0.ɵeld(0, null, null, 11, 'div', [[
                 'class',
                 'form-group'
             ]
         ], null, null, null, null, null)),
         (l()(), import0.ɵted(null, ['\n      '])),
-        (l()(), import0.ɵeld(0, null, null, 0, 'label', [[
+        (l()(), import0.ɵeld(0, null, null, 1, 'label', [[
                 'for',
                 'password'
             ]
         ], null, null, null, null, null)),
+        (l()(), import0.ɵted(null, ['Password'])),
         (l()(), import0.ɵted(null, ['\n      '])),
         (l()(), import0.ɵeld(0, null, null, 5, 'input', [
             [
@@ -335,19 +337,19 @@ export function View_SigninComponent_0(l) {
         ], function (v, en, $event) {
             var ad = true;
             if (('input' === en)) {
-                var pd_0 = (import0.ɵnov(v, 25)._handleInput($event.target.value) !== false);
+                var pd_0 = (import0.ɵnov(v, 27)._handleInput($event.target.value) !== false);
                 ad = (pd_0 && ad);
             }
             if (('blur' === en)) {
-                var pd_1 = (import0.ɵnov(v, 25).onTouched() !== false);
+                var pd_1 = (import0.ɵnov(v, 27).onTouched() !== false);
                 ad = (pd_1 && ad);
             }
             if (('compositionstart' === en)) {
-                var pd_2 = (import0.ɵnov(v, 25)._compositionStart() !== false);
+                var pd_2 = (import0.ɵnov(v, 27)._compositionStart() !== false);
                 ad = (pd_2 && ad);
             }
             if (('compositionend' === en)) {
-                var pd_3 = (import0.ɵnov(v, 25)._compositionEnd($event.target.value) !== false);
+                var pd_3 = (import0.ɵnov(v, 27)._compositionEnd($event.target.value) !== false);
                 ad = (pd_3 && ad);
             }
             return ad;
@@ -413,9 +415,9 @@ export function View_SigninComponent_0(l) {
         var currVal_7 = co.myForm;
         ck(v, 4, 0, currVal_7);
         var currVal_15 = 'email';
-        ck(v, 15, 0, currVal_15);
+        ck(v, 16, 0, currVal_15);
         var currVal_23 = 'password';
-        ck(v, 27, 0, currVal_23);
+        ck(v, 29, 0, currVal_23);
     }, function (ck, v) {
         var co = v.component;
         var currVal_0 = import0.ɵnov(v, 6).ngClassUntouched;
@@ -426,24 +428,24 @@ export function View_SigninComponent_0(l) {
         var currVal_5 = import0.ɵnov(v, 6).ngClassInvalid;
         var currVal_6 = import0.ɵnov(v, 6).ngClassPending;
         ck(v, 2, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6);
-        var currVal_8 = import0.ɵnov(v, 17).ngClassUntouched;
-        var currVal_9 = import0.ɵnov(v, 17).ngClassTouched;
-        var currVal_10 = import0.ɵnov(v, 17).ngClassPristine;
-        var currVal_11 = import0.ɵnov(v, 17).ngClassDirty;
-        var currVal_12 = import0.ɵnov(v, 17).ngClassValid;
-        var currVal_13 = import0.ɵnov(v, 17).ngClassInvalid;
-        var currVal_14 = import0.ɵnov(v, 17).ngClassPending;
-        ck(v, 12, 0, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14);
-        var currVal_16 = import0.ɵnov(v, 29).ngClassUntouched;
-        var currVal_17 = import0.ɵnov(v, 29).ngClassTouched;
-        var currVal_18 = import0.ɵnov(v, 29).ngClassPristine;
-        var currVal_19 = import0.ɵnov(v, 29).ngClassDirty;
-        var currVal_20 = import0.ɵnov(v, 29).ngClassValid;
-        var currVal_21 = import0.ɵnov(v, 29).ngClassInvalid;
-        var currVal_22 = import0.ɵnov(v, 29).ngClassPending;
-        ck(v, 24, 0, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22);
+        var currVal_8 = import0.ɵnov(v, 18).ngClassUntouched;
+        var currVal_9 = import0.ɵnov(v, 18).ngClassTouched;
+        var currVal_10 = import0.ɵnov(v, 18).ngClassPristine;
+        var currVal_11 = import0.ɵnov(v, 18).ngClassDirty;
+        var currVal_12 = import0.ɵnov(v, 18).ngClassValid;
+        var currVal_13 = import0.ɵnov(v, 18).ngClassInvalid;
+        var currVal_14 = import0.ɵnov(v, 18).ngClassPending;
+        ck(v, 13, 0, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12, currVal_13, currVal_14);
+        var currVal_16 = import0.ɵnov(v, 31).ngClassUntouched;
+        var currVal_17 = import0.ɵnov(v, 31).ngClassTouched;
+        var currVal_18 = import0.ɵnov(v, 31).ngClassPristine;
+        var currVal_19 = import0.ɵnov(v, 31).ngClassDirty;
+        var currVal_20 = import0.ɵnov(v, 31).ngClassValid;
+        var currVal_21 = import0.ɵnov(v, 31).ngClassInvalid;
+        var currVal_22 = import0.ɵnov(v, 31).ngClassPending;
+        ck(v, 26, 0, currVal_16, currVal_17, currVal_18, currVal_19, currVal_20, currVal_21, currVal_22);
         var currVal_24 = !co.myForm.valid;
-        ck(v, 32, 0, currVal_24);
+        ck(v, 34, 0, currVal_24);
     });
 }
 function View_SigninComponent_Host_0(l) {
