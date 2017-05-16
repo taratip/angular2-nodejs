@@ -27,7 +27,7 @@ var MessageService = (function () {
         var token = localStorage.getItem('token')
             ? '?token=' + localStorage.getItem('token')
             : '';
-        return this.http.post('https://tj-ang2-deployment.herokuapp.com/message' + token, body, { headers: headers })
+        return this.http.post('http://lowcost-env.kk9szmtxzt.us-east-1.elasticbeanstalk.com/message' + token, body, { headers: headers })
             .map(function (response) {
             var result = response.json();
             var message = new Message(result.obj.content, result.obj.user.firstName, result.obj._id, result.obj.user._id);
@@ -41,7 +41,7 @@ var MessageService = (function () {
     };
     MessageService.prototype.getMessages = function () {
         var _this = this;
-        return this.http.get('https://tj-ang2-deployment.herokuapp.com/message')
+        return this.http.get('http://lowcost-env.kk9szmtxzt.us-east-1.elasticbeanstalk.com/message')
             .map(function (response) {
             var messages = response.json().obj;
             var transformedMessages = [];
@@ -67,7 +67,7 @@ var MessageService = (function () {
         var token = localStorage.getItem('token')
             ? '?token=' + localStorage.getItem('token')
             : '';
-        return this.http.patch('https://tj-ang2-deployment.herokuapp.com/message/' + message.messageId + token, body, { headers: headers })
+        return this.http.patch('http://lowcost-env.kk9szmtxzt.us-east-1.elasticbeanstalk.com/message/' + message.messageId + token, body, { headers: headers })
             .map(function (response) { return response.json(); })
             .catch(function (error) {
             _this.errorService.handleError(error.json());
@@ -80,7 +80,7 @@ var MessageService = (function () {
         var token = localStorage.getItem('token')
             ? '?token=' + localStorage.getItem('token')
             : '';
-        return this.http.delete('https://tj-ang2-deployment.herokuapp.com/message/' + message.messageId + token)
+        return this.http.delete('http://lowcost-env.kk9szmtxzt.us-east-1.elasticbeanstalk.com/message/' + message.messageId + token)
             .map(function (response) { return response.json(); })
             .catch(function (error) {
             _this.errorService.handleError(error.json());
